@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBSegueAction func segue2SwiftUI(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: SwiftUIView())
+    }
+    
+    @IBAction func programmaticallyGotoSwiftUIViewTapped(_ sender: Any) {
+        let vc = UIHostingController(rootView: SwiftUIView())
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
