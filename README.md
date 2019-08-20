@@ -1,6 +1,6 @@
 # Hosting SwiftUI Views in UIKit
 ## Using UIHostingController to display a SwiftUI View in a UIKit app
-**(Updated for Xcode 11 Beta 5)**
+**(Updated for Xcode 11 Beta 6)**
 
 This demo shows how to use **UIHostingController** to display a **SwiftUI View** in a **UIKit** app.
 
